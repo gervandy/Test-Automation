@@ -1,34 +1,29 @@
-# Automation Flow
-
-## Reference
-
-Project: Healthcare Case Management System (HCMS)
-
-Regression Scenario: HCMS-001
-
----
+# Export Case Automation
 
 ## Objective
 
-Automate the manual regression test for exporting a healthcare case to ensure duplicate medication records do not reappear after future releases.
+Automate the regression scenario for Ticket HCMS-001 after successful software validation.
+
+The purpose of this automation is to verify that duplicate medication records do not reappear in future releases.
 
 ---
 
-## Automation Flow
+## Automated Workflow
 
 1. Launch browser
-2. Navigate to HCMS
-3. Log in with a test account
-4. Open the target healthcare case
-5. Click **Export**
+2. Login to HCMS
+3. Search for the test case
+4. Open the healthcare case
+5. Export the case
 6. Download the CSV file
-7. Validate the exported data
+7. Verify exported medication records
 8. Generate execution report
 
 ---
 
 ## Expected Result
 
-- Browser completes all steps successfully.
-- Exported CSV contains no duplicate medication records.
-- Automation execution is reported as **Pass**.
+- Export completes successfully.
+- CSV is downloaded.
+- Medication records contain no duplicates.
+- Test execution is reported as **Pass**.
